@@ -1,0 +1,34 @@
+{
+  "name": "sumergida",
+  "version": "1.0.0",
+  "description": "Página web de la empresa Sumergida Producciones fundada por Néstor Ibarra y Alejandra González, cuyo objetivo principal es la generación de arte y la divulgación de experiencias artísticas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "prueba"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nstor7/Sumergida.git"
+  },
+  "keywords": [
+    "sumergida",
+    "producciones",
+    "Panamá",
+    "Catedral",
+    "Sumergida",
+    "Arte",
+    "Sonido",
+    "Música",
+    "Web",
+    "Cine."
+  ],
+  "author": "Néstor Ibarra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nstor7/Sumergida/issues"
+  },
+  "homepage": "https://github.com/nstor7/Sumergida#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
