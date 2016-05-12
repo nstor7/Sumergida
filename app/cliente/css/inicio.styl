@@ -1,0 +1,136 @@
+gris = #939598
+verde = #044d64
+celeste = #02aec3
+negro = #231f20
+naranja = #F6391B
+
+h1, h2
+    font-size 2em
+    color white
+    text-align center
+    font-family: 'inconsolata'
+p
+    font-size 1em
+    color white
+    text-align justify
+    font-family: 'Lato', sans-serif
+
+section
+    width 100%
+    @media screen and (orientation: landscape){
+        margin 64px auto 0 auto
+        max-width 1100px
+        display flex
+        display -webkit-flex
+        flex-flow row wrap
+        -webkit-flex-flow row wrap
+    }
+    
+    article
+        height 100vw
+        width 100vw
+        padding 20px
+        box-sizing border-box
+        @media screen and (min-width: 900px)
+            margin 0 
+            padding 20px
+            height 440px  
+        
+.c1
+    background url('../imagenes/sumergidaPortadaSq.jpg')
+    background-repeat no-repeat
+    background-size contain
+    @media screen and (min-width: 900px){
+        background url('../imagenes/sumergidaPortada.jpg')
+        width 60%
+        order 1
+    }
+.c2
+    background celeste
+    background-repeat no-repeat
+    background-size contain
+    height inherit
+    @media screen and (min-width: 900px){
+        width 40%
+        order 2
+    }
+.c3
+    background url('../imagenes/sumergidaAudioSq.jpg')
+    background-repeat no-repeat
+    background-size contain
+    @media screen and (min-width: 900px){
+        background url('../imagenes/sumergidaAudio.jpg')
+        width 60%
+        order 4
+    }
+.c4
+    background naranja
+    height inherit
+    @media screen and (min-width: 900px){
+        width 40%
+        order 3
+    }
+.c5
+    background url('../imagenes/sumergidaCineSq.jpg')
+    background-repeat no-repeat
+    background-size contain
+    @media screen and (min-width: 900px){
+        background url('../imagenes/sumergidaCine.jpg')
+        width 100%
+        order 6
+    }
+.c6
+    background negro
+    background-repeat no-repeat
+    background-size contain
+    height inherit
+    @media screen and (min-width: 900px){
+        width 100% 
+        order 5
+    } 
+.c7
+    background url('../imagenes/sumergidaFoto.jpg')
+    background-repeat no-repeat
+    background-size contain
+    @media screen and (min-width: 900px){
+        width 40%
+        order 7
+    }     
+.c8
+    background celeste
+    background-repeat no-repeat
+    background-size contain
+    height inherit
+    @media screen and (min-width: 900px){
+        width 60%
+        order 8
+    }
+.c9
+    background url('../imagenes/sumergidaWebSq.jpg')
+    background-repeat no-repeat
+    background-size contain
+    @media screen and (min-width: 900px){
+        background url('../imagenes/sumergidaWeb.jpg')
+        width 60%
+        order 10
+    }      
+.c10
+    background celeste
+    background-repeat no-repeat
+    background-size contain
+    height inherit
+    @media screen and (min-width: 900px){
+        width 20%
+        order 9
+    }
+
+.c11
+    background celeste
+    background-repeat no-repeat
+    background-size contain
+    height inherit
+    @media screen and (min-width: 900px){
+        background naranja
+        width 20%
+        order 11
+    }
