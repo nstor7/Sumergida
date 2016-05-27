@@ -4,7 +4,8 @@
   "description": "Página web de Sumergida Producciones, mostrará los diferentes servicios de la productora, proyectos y coolaboradores que trabajan en el proyecto",
   "main": "servidor.js",
   "scripts": {
-    "serve": "babel-node app/servidor.js --presets es2015"
+    "serve": "babel-nodejs app/servidor.js --presets es2015",
+    "test": "babel-nodejs app/servidor.js --presets es2015"
   },
   "repository": {
     "type": "git",
