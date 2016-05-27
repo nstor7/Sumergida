@@ -14,19 +14,16 @@ p
     color white
     text-align justify
     font-family: 'Lato', sans-serif
-
 section
     width 100%
-    margin-top 64px
-    @media screen and (orientation: landscape){
-        margin 64px auto 0 auto
+    margin 64px auto 0 auto
+    max-width 700
+    @media screen and (orientation: landscape)
         max-width 1100px
         display flex
         display -webkit-flex
         flex-flow row wrap
-        -webkit-flex-flow row wrap
-    }
-    
+        -webkit-flex-flow row wrap 
     article
         height 100vw
         width 100vw
@@ -36,102 +33,158 @@ section
             margin 0 
             padding 20px
             height 440px  
-        
 .c1
     background url('../imagenes/sumergidaPortadaSq.jpg')
     background-repeat no-repeat
     background-size contain
-    @media screen and (min-width: 900px){
+    @media screen and (max-width: 899px) and (min-resolution: 2dppx)
+        background url('../imagenes/sumergidaPortadaSq2x.jpg')
+        background-repeat no-repeat
+        background-size contain
+    @media screen and (max-width: 899px) and (min-resolution: 3dppx)
+        background url('../imagenes/sumergidaPortadaSq3x.jpg')
+        background-repeat no-repeat
+        background-size contain
+    @media screen and (min-width: 900px)
         background url('../imagenes/sumergidaPortada.jpg')
+        background-size contain
         width 60%
         order 1
-    }
+    @media screen and (min-width: 900px) and (min-resolution: 2dppx)
+        background url('../imagenes/sumergidaPortada2x.jpg')
+        background-size contain
+    @media screen and (min-width: 900px) and (min-resolution: 3dppx)
+        background url('../imagenes/sumergidaPortada3x.jpg')
+        background-size contain
 .c2
     background celeste
     background-repeat no-repeat
     background-size contain
     height inherit
-    @media screen and (min-width: 900px){
+    @media screen and (min-width: 900px)
         width 40%
         order 2
-    }
 .c3
     background url('../imagenes/sumergidaAudioSq.jpg')
     background-repeat no-repeat
     background-size contain
-    @media screen and (min-width: 900px){
+    @media screen and (max-width: 899px) and (min-resolution: 2dppx)
+        background url('../imagenes/sumergidaAudioSq2x.jpg')
+        background-repeat no-repeat
+        background-size contain
+    @media screen and (max-width: 899px) and (min-resolution: 3dppx)
+        background url('../imagenes/sumergidaAudioSq3x.jpg')
+        background-repeat no-repeat
+        background-size contain
+    @media screen and (min-width: 900px)
         background url('../imagenes/sumergidaAudio.jpg')
         width 60%
         order 4
-    }
+    @media screen and (min-width: 900px) and (min-resolution: 2dppx)
+        background url('../imagenes/sumergidaAudio2x.jpg')
+        background-size contain
+    @media screen and (min-width: 900px) and (min-resolution: 3dppx)
+        background url('../imagenes/sumergidaAudio3x.jpg')
+        background-size contain
 .c4
     background naranja
     height inherit
-    @media screen and (min-width: 900px){
+    @media screen and (min-width: 900px)
         width 40%
         order 3
-    }
+
 .c5
     background url('../imagenes/sumergidaCineSq.jpg')
     background-repeat no-repeat
     background-size contain
-    @media screen and (min-width: 900px){
+    @media screen and (max-width: 899px) and (min-resolution: 2dppx)
+        background url('../imagenes/sumergidaCineSq2x.jpg')
+        background-repeat no-repeat
+        background-size contain
+    @media screen and (max-width: 899px) and (min-resolution: 3dppx)
+        background url('../imagenes/sumergidaCineSq3x.jpg')
+        background-repeat no-repeat
+        background-size contain
+    @media screen and (min-width: 900px)
         background url('../imagenes/sumergidaCine.jpg')
         width 100%
         order 6
-    }
+    @media screen and (min-width: 900px) and (min-resolution: 2dppx)
+        background url('../imagenes/sumergidaCine2x.jpg')
+        background-size contain
+    @media screen and (min-width: 900px) and (min-resolution: 3dppx)
+        background url('../imagenes/sumergidaCine3x.jpg')
+        background size contain
+    
 .c6
     background negro
     background-repeat no-repeat
     background-size contain
     height inherit
-    @media screen and (min-width: 900px){
+    @media screen and (min-width: 900px)
         width 100% 
         order 5
-    } 
+
 .c7
     background url('../imagenes/sumergidaFoto.jpg')
     background-repeat no-repeat
     background-size contain
-    @media screen and (min-width: 900px){
+    @media screen and (min-width: 900px)
         width 40%
         order 7
-    }     
+    @media screen and (min-resolution: 2dppx)
+        background url('../imagenes/sumergidaFoto2x.jpg')
+        background-repeat no-repeat
+        background-size contain
+    @media screen and (min-resolution: 3dppx)
+        background url('../imagenes/sumergidaFoto3x.jpg')
+        background-repeat no-repeat
+        background-size contain    
 .c8
     background celeste
     background-repeat no-repeat
     background-size contain
     height inherit
-    @media screen and (min-width: 900px){
+    @media screen and (min-width: 900px)
         width 60%
         order 8
-    }
+
 .c9
     background url('../imagenes/sumergidaWebSq.jpg')
     background-repeat no-repeat
     background-size contain
-    @media screen and (min-width: 900px){
+    @media screen and (max-width: 899px) and (min-resolution: 2dppx)
+        background url('../imagenes/sumergidaWebSq2x.jpg')
+        background-repeat no-repeat
+        background-size contain
+    @media screen and (max-width: 899px) and (min-resolution: 3dppx)
+        background url('../imagenes/sumergidaWebSq3x.jpg')
+        background-repeat no-repeat
+        background-size contain
+    @media screen and (min-width: 900px)
         background url('../imagenes/sumergidaWeb.jpg')
         width 60%
-        order 10
-    }      
+        order 10  
+    @media screen and (min-width: 900px) and (min-resolution: 2dppx)
+        background url('../imagenes/sumergidaWeb2x.jpg')
+        background-size contain
+    @media screen and (min-width: 900px) and (min-resolution: 3dppx)
+        background url('../imagenes/sumergidaWeb3x.jpg')
+        background size contain
 .c10
     background celeste
     background-repeat no-repeat
     background-size contain
     height inherit
-    @media screen and (min-width: 900px){
+    @media screen and (min-width: 900px)
         width 20%
         order 9
-    }
-
 .c11
     background celeste
     background-repeat no-repeat
     background-size contain
     height inherit
-    @media screen and (min-width: 900px){
+    @media screen and (min-width: 900px)
         background naranja
         width 20%
         order 11
-    }

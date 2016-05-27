@@ -6,18 +6,27 @@ naranja = #F6391B
     background naranja
     bottom 0
     right 0
-    height 230px
-    padding 10px
+    width 230px
+    height 50px
     @media screen and (min-width: 1130px)
         top 64px
+        right 0
+        padding 10px
         width 30px 
+        height 230px
      ul
-         list-style none
-         width 30px
+         width 300px
+         height 30px
          padding 0
-         height 300px
+         list-style none
+         @media screen and (min-width: 1130px) 
+             width 30px
+             height 300px
          li
+             display inline-block
              margin 0
+             @media screen and (max-width: 1130px) 
+                 margin-right 5px
              img
                  height 30px
              
