@@ -5,7 +5,7 @@
   "main": "servidor.js",
   "scripts": {
     "serve": "babel-nodejs app/servidor.js --presets es2015",
-    "test": "babel-nodejs app/prueba.js --presets es2015"
+    "test": "babel-node app/prueba.js --presets es2015"
   },
   "repository": {
     "type": "git",
