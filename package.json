@@ -5,7 +5,7 @@
   "description": "Página web de Sumergida Producciones, mostrará los diferentes servicios de la productora, proyectos y coolaboradores que trabajan en el proyecto", 
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run estilo\" \"npm run lite\" ",
-    "lite": "lite-server",
+    "lite": "lite-server -- port 80",
     "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
