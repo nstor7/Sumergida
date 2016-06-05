@@ -1,5 +1,5 @@
 
 { 
 "port": 80,
-"files": [ './**/*.{html,htm,css,js}' ]
+"files": [ "./**/*.{html,htm,css,js}" ]
  }
