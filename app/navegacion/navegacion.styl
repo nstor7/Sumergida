@@ -1,0 +1,43 @@
+gris = #939598
+verde = #044d64
+celeste = #02aec3
+negro = #231f20
+naranja = #F6391B
+
+nav
+    position fixed
+    overflow visible
+    background negro
+    width 100%
+    text-align center
+    @media screen and (min-width: 900px)
+        width 60%
+        right 20px
+        top 0
+        text-align right
+    ul
+        list-style none
+        display none
+        @media screen and (min-width: 900px)
+            display inline-block
+        li
+            height 30px
+            line-height 30px
+            @media screen and (min-width: 900px)
+                display inline-block
+                vertical-align top
+                margin-right 20px
+            a
+                text-decoration none
+                color gris
+                font-family: 'Lato', sans-serif
+.menu
+    position fixed
+    top 17px 
+    right 17px
+    height 30px
+    background: celeste
+    border-color celeste
+    @media screen and (min-width: 900px)
+        display none
+    

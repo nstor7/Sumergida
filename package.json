@@ -1,35 +1,44 @@
 {
   "name": "sumergida",
+    
   "version": "1.0.0",
-  "description": "Página web de Sumergida Producciones, mostrará los diferentes servicios de la productora, proyectos y coolaboradores que trabajan en el proyecto",
-  "main": "servidor.js",
+  "description": "Página web de Sumergida Producciones, mostrará los diferentes servicios de la productora, proyectos y coolaboradores que trabajan en el proyecto", 
   "scripts": {
-    "serve": "babel-node app/servidor.js --presets es2015",
-    "test": "babel-node app/prueba.js --presets es2015"
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run estilo\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "estilo": "stylus -w -c styles.styl"
   },
-  "repository": {
+    "repository": {
     "type": "git",
     "url": "git+https://github.com/nstor7/Sumergida.git"
   },
-  "keywords": [
-    "sumergida",
-    "estudio",
-    "producciones",
-    "audio",
-    "video",
-    "web",
-    "multimedia"
-  ],
-  "author": "Néstor ibarra",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nstor7/Sumergida/issues"
-  },
-  "homepage": "https://github.com/nstor7/Sumergida#readme",
   "dependencies": {
-    "angular": "^1.5.5",
-    "babel-cli": "^6.8.0",
-    "babel-preset-es2015": "^6.6.0",
-    "express": "^4.13.4"
+    "@angular/common":  "2.0.0-rc.1",
+    "@angular/compiler":  "2.0.0-rc.1",
+    "@angular/core":  "2.0.0-rc.1",
+    "@angular/http":  "2.0.0-rc.1",
+    "@angular/platform-browser":  "2.0.0-rc.1",
+    "@angular/platform-browser-dynamic":  "2.0.0-rc.1",
+    "@angular/router":  "2.0.0-rc.1",
+    "@angular/router-deprecated":  "2.0.0-rc.1",
+    "@angular/upgrade":  "2.0.0-rc.1",
+    "systemjs": "0.19.27",
+    "core-js": "^2.4.0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12",
+    "angular2-in-memory-web-api": "0.0.11",
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.2.0",
+    "typescript": "^1.8.10",
+    "typings":"^1.0.4"
   }
 }
