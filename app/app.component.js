@@ -10,18 +10,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var header_component_1 = require('./header/header.component');
-var inicio_component_1 = require('./inicio/inicio.component');
 var footer_component_1 = require('./footer/footer.component');
 var social_component_1 = require('./social/social.component');
 var navegacion_component_1 = require('./navegacion/navegacion.component');
+var router_1 = require('@angular/router');
+var inicio_component_1 = require('./inicio/inicio.component');
+var servicios_component_1 = require('./servicios/servicios.component');
+var personal_component_1 = require('./personal/personal.component');
+var proyectos_component_1 = require('./proyectos/proyectos.component');
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
+        router_1.Routes([
+            { path: '/', component: inicio_component_1.inicioComponent },
+            { path: '/servicios', component: servicios_component_1.serviciosComponent },
+            { path: '/personal', component: personal_component_1.personalComponent },
+            { path: '/proyectos', component: proyectos_component_1.proyectosComponent },
+            { path: '*', component: inicio_component_1.inicioComponent }
+        ]),
         core_1.Component({
             selector: 'my-app',
             templateUrl: 'app/app.html',
-            directives: [header_component_1.headerComponent, inicio_component_1.inicioComponent, footer_component_1.footerComponent, social_component_1.socialComponent, navegacion_component_1.navegacionComponent]
+            directives: [header_component_1.headerComponent, footer_component_1.footerComponent, social_component_1.socialComponent, navegacion_component_1.navegacionComponent, router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

@@ -9,19 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var headerComponent = (function () {
-    function headerComponent() {
+var personalComponent = (function () {
+    function personalComponent() {
     }
-    headerComponent = __decorate([
+    personalComponent = __decorate([
         core_1.Component({
-            selector: 'header-component',
-            templateUrl: 'app/header/header.html',
-            directives: [router_1.ROUTER_DIRECTIVES]
+            selector: 'personal-component',
+            templateUrl: 'app/personal/personal.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], headerComponent);
-    return headerComponent;
+    ], personalComponent);
+    return personalComponent;
 }());
-exports.headerComponent = headerComponent;
-//# sourceMappingURL=header.component.js.map
+exports.personalComponent = personalComponent;
+//# sourceMappingURL=personal.component.js.map

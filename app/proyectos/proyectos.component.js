@@ -9,19 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var headerComponent = (function () {
-    function headerComponent() {
+var proyectosComponent = (function () {
+    function proyectosComponent() {
     }
-    headerComponent = __decorate([
+    proyectosComponent = __decorate([
         core_1.Component({
-            selector: 'header-component',
-            templateUrl: 'app/header/header.html',
-            directives: [router_1.ROUTER_DIRECTIVES]
+            selector: 'proyectos-component',
+            templateUrl: 'app/proyectos/proyectos.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], headerComponent);
-    return headerComponent;
+    ], proyectosComponent);
+    return proyectosComponent;
 }());
-exports.headerComponent = headerComponent;
-//# sourceMappingURL=header.component.js.map
+exports.proyectosComponent = proyectosComponent;
+//# sourceMappingURL=proyectos.component.js.map
