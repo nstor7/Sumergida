@@ -1,10 +1,10 @@
 <nav>
-    <button class="menu"><i class="fa fa-bars" aria-hidden="true"></i>
+    <button class="menu" (click)="escondido=!escondido"><i class="fa fa-bars" aria-hidden="true"></i>
     </button>
-    <ul>
-        <li><a [routerLink]="['/']">Inicio</a></li>
-        <li><a [routerLink]="['/servicios']">Servicios</a></li>
-        <li><a [routerLink]="['/personal']">Personal</a></li>
-        <li><a [routerLink]="['/proyectos']">Proyectos</a></li>
+    <ul [ngClass]="{hidden: escondido == true, show: escondido == false}">
+        <li><a [routerLink]="['/']" (click)="escondido=true">Inicio</a></li>
+        <li><a [routerLink]="['/servicios']" (click)="escondido=true">Servicios</a></li>
+        <li><a [routerLink]="['/personal']" (click)="escondido=true">Personal</a></li>
+        <li><a [routerLink]="['/proyectos']" (click)="escondido=true">Proyectos</a></li>
     </ul>
 </nav>

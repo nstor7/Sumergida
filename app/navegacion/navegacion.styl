@@ -18,16 +18,14 @@ nav
         text-align right
     ul
         list-style none
-        display none
-        @media screen and (min-width: 600px)
-            display inline-block
         li
+            margin-top 30px
             height 30px
             line-height 30px
             @media screen and (min-width: 600px)
                 display inline-block
                 vertical-align top
-                margin-right 20px
+                margin 0 20px 0 0
             a
                 text-decoration none
                 color gris
@@ -41,4 +39,9 @@ nav
     border-color celeste
     @media screen and (min-width: 600px)
         display none
-    
+.hidden
+    display none
+    @media screen and (min-width: 600px)
+        display inline-block
+.show
+    display inline-block

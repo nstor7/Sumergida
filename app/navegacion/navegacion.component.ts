@@ -7,4 +7,7 @@ import { ROUTER_DIRECTIVES} from '@angular/router'
         directives: [ROUTER_DIRECTIVES]
         })
 
-export class navegacionComponent{}
+export class navegacionComponent{
+    escondido:boolean = true
+}
+
